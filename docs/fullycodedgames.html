@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+<style>
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+</style>
+<body>
+
+<h1>games</h1>
+
+<div class="btn-group">
+  <button onclick="window.location.href='noughts_and_crosses.html'">NoughtsandCrosses</button>
+
+  <button onclick="window.location.href='Snake.html'">Snake</button>
+
+   <button onclick="window.location.href='Table-Tennis.html'">Table Tennis</button>
+
+   <button onclick="window.location.href='Endless-Runner.html'">Endless Runner</button>
+</div>
+
+</body>
+</html>
